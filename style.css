@@ -95,3 +95,7 @@ header {
 .coin-card p:last-child {
     margin-bottom: 0;
 }
+
+.dark-mode {
+    color: var(--dark-mode-color);
+}
