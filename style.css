@@ -21,3 +21,11 @@ header {
     padding: 1rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
+  
+  .logo {
+    background-image: url('https://raw.githubusercontent.com/shubhkarmanrathore/phase-1-final-project-crypto/main/bit.png?token=GHSAT0AAAAAACCJBCP26EYWXSCEOBDBQQQGZCVP3FQ');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10rem;
+    height: 10rem;
+    }
