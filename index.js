@@ -46,3 +46,30 @@ function displayCoins(coins) {
       
     });
   }
+
+// Search for coins
+function searchCoins(event) {
+    const searchValue = event.target.value.toLowerCase();
+    getCoins().then(coins => {
+      const filteredCoins = coins.filter(coin => {
+        return coin.name.toLowerCase().includes(searchValue) ||
+               coin.symbol.toLowerCase().includes(searchValue);
+      });
+      displayCoins(filteredCoins);
+    });
+  }
+  
+  // Load and display the top 20 coins on page load
+  getCoins().then(coins => {
+    displayCoins(coins);
+  });
+  
+  // Add event listener to search input
+  searchInput.addEventListener('input', searchCoins);
+  
+  //Refresh page from home button
+  const h1 = document.querySelector('h1')
+  h1.addEventListener('click', reloadPage)
+  function reloadPage() {
+      location.reload()
+  }
