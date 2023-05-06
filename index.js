@@ -1,6 +1,8 @@
+document.addEventListener('DOMContentLoaded', () => {
 const Url = 'https://api.coincap.io/v2/assets';
 const coinsGrid = document.querySelector('.coins-grid');
 const searchInput = document.getElementById('search-input');
+
 
 // Fetch data from CoinCap API
 async function getCoins() {
@@ -13,6 +15,7 @@ async function getCoins() {
   }
 }
 
+
 // Display coin data in the grid
 function displayCoins(coins) {
     coinsGrid.textContent = '';
@@ -21,9 +24,9 @@ function displayCoins(coins) {
   
       const card = document.createElement('div');
       card.classList.add('coin-card');
-      card.addEventListener('click', () => {
-        window.location.href = `https://coinmarketcap.com/currencies/${id}`;
-      });
+    //   card.addEventListener('click', () => {
+    //     window.location.href = `https://coinmarketcap.com/currencies/${id}`;
+    //   });
   
       const image = document.createElement('img');
       image.src = `https://crypto.com/price/_next/image?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2F${id}%2Fcolor_icon.png&w=64&q=75`;
@@ -47,6 +50,7 @@ function displayCoins(coins) {
     });
   }
 
+
 // Search for coins
 function searchCoins(event) {
     const searchValue = event.target.value.toLowerCase();
@@ -59,14 +63,17 @@ function searchCoins(event) {
     });
   }
   
+
   // Load and display the top 20 coins on page load
   getCoins().then(coins => {
     displayCoins(coins);
   });
   
+
   // Add event listener to search input
   searchInput.addEventListener('input', searchCoins);
   
+
   //Refresh page from home button
   const h1 = document.querySelector('h1')
   h1.addEventListener('click', reloadPage)
@@ -75,8 +82,7 @@ function searchCoins(event) {
   }
 
 
-
-//   ____________________________
+//Dark Mode toggle
 const toggle = document.querySelector('.toggle');
 const toggleLabel = document.querySelector('.toggle-label');
 const body = document.querySelector('body');
@@ -90,3 +96,14 @@ toggle.addEventListener('change', function() {
     toggleLabel.classList.remove('toggle-label--checked');
   }  
 });
+
+//Page Scroll
+const contactButton = document.querySelector('#contactButton');
+const contact = document.querySelector('#contact');
+
+contactButton.addEventListener('click', () => {
+  contact.scrollIntoView({ behavior: 'smooth' });
+});
+
+})
+
