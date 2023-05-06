@@ -20,32 +20,47 @@ async function getCoins() {
 function displayCoins(coins) {
     coinsGrid.textContent = '';
     coins.slice(0, 20).forEach(coin => {
-      const { id, rank, symbol, name, priceUsd, changePercent24Hr } = coin;
+        const { id, rank, symbol, name, supply, maxSupply, marketCapUsd, volumeUsd24Hr,  priceUsd, changePercent24Hr, vwap24Hr } = coin;
   
-      const card = document.createElement('div');
-      card.classList.add('coin-card');
+    const card = document.createElement('div');
+    card.classList.add('coin-card');
     //   card.addEventListener('click', () => {
     //     window.location.href = `https://coinmarketcap.com/currencies/${id}`;
     //   });
   
-      const image = document.createElement('img');
-      image.src = `https://crypto.com/price/_next/image?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2F${id}%2Fcolor_icon.png&w=64&q=75`;
-      image.alt = `${name} icon`;
+    const image = document.createElement('img');
+    image.src = `https://crypto.com/price/_next/image?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2F${id}%2Fcolor_icon.png&w=64&q=75`;
+    image.alt = `${name} icon`;
   
-      const heading = document.createElement('h2');
-      heading.textContent = `${name} (${symbol})`;
+    const heading = document.createElement('h2');
+    heading.textContent = `${name} (${symbol})`;
   
-      const price = document.createElement('p');
-      price.textContent = `Price: $${parseFloat(priceUsd).toFixed(2)}`;
+    const price = document.createElement('p');
+    price.textContent = `Price: $${parseFloat(priceUsd).toFixed(2)}`;
   
-      const change = document.createElement('p');
-      change.textContent = `24h Change: ${parseFloat(changePercent24Hr).toFixed(2)}%`;
+    const change = document.createElement('p');
+    change.textContent = `24h Change: ${parseFloat(changePercent24Hr).toFixed(2)}%`;
+    const arrow = document.createElement('span');
+    arrow.classList.add('arrow');
+
+    if (changePercent24Hr >= 0) {
+      arrow.textContent = '   ⇧';
+      arrow.classList.add('green-arrow');
+    } else {
+      arrow.textContent = '   ⇩';
+      arrow.classList.add('red-arrow');
+    }
+
+    change.appendChild(arrow);
   
-      card.appendChild(image);
-      card.appendChild(heading);
-      card.appendChild(price);
-      card.appendChild(change);
-      coinsGrid.appendChild(card);
+    card.appendChild(image);
+    card.appendChild(heading);
+    card.appendChild(price);
+    card.appendChild(change);
+    coinsGrid.appendChild(card);
+
+    //   card.addEventListener('click', expandCoin)
+      
       
     });
   }
@@ -64,22 +79,22 @@ function searchCoins(event) {
   }
   
 
-  // Load and display the top 20 coins on page load
-  getCoins().then(coins => {
+// Load and display the top 20 coins on page load
+getCoins().then(coins => {
     displayCoins(coins);
-  });
+});
   
 
-  // Add event listener to search input
-  searchInput.addEventListener('input', searchCoins);
+// Add event listener to search input
+searchInput.addEventListener('input', searchCoins);
   
 
-  //Refresh page from home button
-  const h1 = document.querySelector('h1')
-  h1.addEventListener('click', reloadPage)
-  function reloadPage() {
-      location.reload()
-  }
+//Refresh page from home button
+const h1 = document.querySelector('h1')
+h1.addEventListener('click', reloadPage)
+function reloadPage() {
+    location.reload()
+}
 
 
 //Dark Mode toggle
@@ -101,9 +116,12 @@ toggle.addEventListener('change', function() {
 const contactButton = document.querySelector('#contactButton');
 const contact = document.querySelector('#contact');
 
-contactButton.addEventListener('click', () => {
-  contact.scrollIntoView({ behavior: 'smooth' });
-});
+contactButton.addEventListener('click', scrollToContact)
+
+function scrollToContact(e) {
+contact.scrollIntoView({behavior: 'smooth'});
+console.log('clicked')
+}
 
 })
 
