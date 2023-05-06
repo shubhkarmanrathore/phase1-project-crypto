@@ -26,8 +26,8 @@ header {
     background-image: url('https://raw.githubusercontent.com/shubhkarmanrathore/phase-1-final-project-crypto/main/bit.png?token=GHSAT0AAAAAACCJBCP26EYWXSCEOBDBQQQGZCVP3FQ');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 10rem;
-    height: 10rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .search-container {
@@ -154,3 +154,40 @@ footer {
     color: #fff;
     cursor: pointer;
 }
+
+/* ---------- */
+.dark-mode  {
+    background-color: #1a1a1d;
+    color: #ffffff;
+  }
+  
+  .dark-mode .coin-card {
+    background-color: #2a2a2e;
+    color: #ffffff;
+  }
+  
+  .dark-mode .coin-card:hover {
+    background-color: #3a3a3e;
+  }
+  
+  .dark-mode .coin-card h2 {
+    color: #ffffff;
+  }
+  
+  .dark-mode .coin-card p {
+    color: #ffffff;
+  }
+
+  .dark-mode .options{
+    color: white
+  }
+
+  .dark-mode .footer{
+    background-color: #1a1a1d;
+  }
+
+  
+  /* .dark-mode .coin-card img {
+    filter: brightness(0) invert(1);
+  } */
+  

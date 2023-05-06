@@ -73,3 +73,20 @@ function searchCoins(event) {
   function reloadPage() {
       location.reload()
   }
+
+
+
+//   ____________________________
+const toggle = document.querySelector('.toggle');
+const toggleLabel = document.querySelector('.toggle-label');
+const body = document.querySelector('body');
+
+toggle.addEventListener('change', function() {
+  if (this.checked) {
+    body.classList.add('dark-mode');
+    toggleLabel.classList.add('toggle-label--checked');
+  } else {
+    body.classList.remove('dark-mode');
+    toggleLabel.classList.remove('toggle-label--checked');
+  }  
+});
