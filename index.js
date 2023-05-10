@@ -52,16 +52,16 @@ function displayCoins(coins) {
     }
 
     change.appendChild(arrow);
-  
+
     card.appendChild(image);
     card.appendChild(heading);
     card.appendChild(price);
     card.appendChild(change);
     coinsGrid.appendChild(card);
 
-    //   card.addEventListener('click', expandCoin)
+
       
-      
+
     });
   }
 
@@ -118,8 +118,8 @@ const contact = document.querySelector('#contact');
 
 contactButton.addEventListener('click', scrollToContact)
 
-function scrollToContact(e) {
-contact.scrollIntoView({behavior: 'smooth'});
+function scrollToContact() {
+contact-info.scrollIntoView({behavior: 'smooth'});
 console.log('clicked')
 }
 
