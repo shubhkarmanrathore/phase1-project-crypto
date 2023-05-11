@@ -19,16 +19,18 @@ header {
     align-items: center;
     background-color: var(--header-background-color);
     padding: 1rem;
-    
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    /* background-image: url('https://raw.githubusercontent.com/shubhkarmanrathore/phase-1-final-project-crypto/main/bit.png?token=GHSAT0AAAAAACCJBCP26EYWXSCEOBDBQQQGZCVP3FQ'); */
+    background-image: url('./images/bit.png');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 2rem;
-    height: 2rem;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: -4.3%;
+    cursor: pointer;
+
 }
 
 .search-container {
@@ -112,8 +114,8 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-  padding: 0;
-  margin: 20px;
+    padding: 0;
+    margin: 20px;
 }
   
 nav li {
@@ -198,7 +200,12 @@ footer {
 
   .red-arrow{
     color: red;
+  };
+
+  .modal-overlay{
+    display:flex
   }
 
-
-  
+  .modal{
+    display: flex;
+  }
