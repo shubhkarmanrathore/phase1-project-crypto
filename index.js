@@ -24,9 +24,6 @@ function displayCoins(coins) {
   
     const card = document.createElement('div');
     card.classList.add('coin-card');
-    //   card.addEventListener('click', () => {
-    //     window.location.href = `https://coinmarketcap.com/currencies/${id}`;
-    //   });
   
     const image = document.createElement('img');
     image.src = `https://crypto.com/price/_next/image?url=https%3A%2F%2Fstatic.crypto.com%2Ftoken%2Ficons%2F${id}%2Fcolor_icon.png&w=64&q=75`;
@@ -58,10 +55,6 @@ function displayCoins(coins) {
     card.appendChild(price);
     card.appendChild(change);
     coinsGrid.appendChild(card);
-
-
-      
-
     });
   }
 
@@ -112,8 +105,8 @@ toggle.addEventListener('change', function() {
   }  
 });
 
-//Page Scroll
 
+//Page Scroll
 function scrollToBottom() {
     const contactButton = document.querySelector('#contactButton');
     contactButton.addEventListener('click', () => {
