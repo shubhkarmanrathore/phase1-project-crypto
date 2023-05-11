@@ -113,15 +113,18 @@ toggle.addEventListener('change', function() {
 });
 
 //Page Scroll
-const contactButton = document.querySelector('#contactButton');
-const contact = document.querySelector('#contact');
 
-contactButton.addEventListener('click', scrollToContact)
-
-function scrollToContact() {
-contact-info.scrollIntoView({behavior: 'smooth'});
-console.log('clicked')
-}
-
+function scrollToBottom() {
+    const contactButton = document.querySelector('#contactButton');
+    contactButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    });
+  }
+  
+  scrollToBottom();
+  
 })
 

@@ -107,9 +107,7 @@ header {
     margin-bottom: 0;
 }
 
-/* .dark-mode {
-    color: var(--dark-mode-color);
-} */
+
 
 nav ul {
     display: flex;
@@ -148,7 +146,7 @@ footer {
     cursor: pointer;
 }
 
-#contact{
+#contact-info{
     list-style: none;
 }
 
@@ -156,7 +154,7 @@ footer {
     margin: 0.5rem;
 }
 
-/* ---------- */
+
 .toggle-container {
     position: absolute;
     top: 37px;
@@ -202,7 +200,5 @@ footer {
     color: red;
   }
 
-  /* .dark-mode .coin-card img {
-    filter: brightness(0) invert(1);
-  } */
+
   
