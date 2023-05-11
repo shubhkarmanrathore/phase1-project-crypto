@@ -4,18 +4,18 @@
 Bit Wise is a web application that allows users to track the real-time prices and information of 100 different cryptocurrencies. The app provides users with detailed information such as rank, symbol, name, supply, max supply, market cap, volume, price, and 24-hour change for each coin. Users can also search for specific coins and view the detailed information for each coin by clicking on the corresponding card.
 
 # Features
-1. Real-time tracking of 100 different cryptocurrency prices and information.
-2. Detailed information for each coin, including rank, symbol, name, supply, max supply, market cap, volume, price, and 24-hour change.
-3. Search functionality for specific coins.
-4. Dark mode toggle.
-5. Contact information accessible from the navigation bar.
-6. The application includes a logo refresh feature that allows users to reload the page by clicking on the logo.
+- Real-time tracking of 100 different cryptocurrency prices and information.
+- Detailed information for each coin, including rank, symbol, name, supply, max supply, market cap, volume, price, and 24-hour change.
+- Search functionality for specific coins.
+- Dark mode toggle.
+- Contact information accessible from the navigation bar.
+- The application includes a logo refresh feature that allows users to reload the page by clicking on the logo.
 
 # Technologies Used
-1. HTML
-2. CSS
-3. JavaScript
-4. CoinCap API
+- HTML
+- CSS
+- JavaScript
+- CoinCap API
 
 # Getting Started
 To get started with the Cryptocurrency Tracker, follow these steps:
