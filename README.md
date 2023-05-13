@@ -1,15 +1,15 @@
 # phase1-project-crypto
 
 # Bit Wise App
-Bit Wise is a web application that allows users to track the real-time prices and information of 100 different cryptocurrencies. The app provides users with detailed information such as rank, symbol, name, supply, max supply, market cap, volume, price, and 24-hour change for each coin. Users can also search for specific coins and view the detailed information for each coin by clicking on the corresponding card.
+Bit Wise is a web application that allows users to track the real-time prices and information of 100 different cryptocurrencies. The app provides users with detailed information such as rank, symbol, name, market cap, volume, price, and 24-hour change for each coin. Users can also search for specific coins and view the detailed information for each coin.
 
 # Features
 - Real-time tracking of 100 different cryptocurrency prices and information.
-- Detailed information for each coin, including rank, symbol, name, supply, max supply, market cap, volume, price, and 24-hour change.
+- Detailed information for each coin, including rank, symbol, name, market cap, volume, price, and 24-hour change.
 - Search functionality for specific coins.
 - Dark mode toggle.
 - Contact information accessible from the navigation bar.
-- The application includes a logo refresh feature that allows users to reload the page by clicking on the logo.
+- The application includes a refresh feature that allows users to reload the page by clicking on the logo or home button.
 
 NOTE: Some of the features such as the 'About' page, among others, are not available yet, to fulfill the requirement of 'no redirects' to others pages. These links have been used for purely aesthetic purpose, but will be added later.
 
@@ -24,11 +24,10 @@ To get started with the Cryptocurrency Tracker, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Open the index.html file in your web browser.
-3. The app will load with the list of the top 100 cryptocurrencies.
-4. To view detailed information for a specific coin, click on the corresponding card.
-5. To search for a specific coin, type the name or symbol of the coin in the search bar.
-6. To toggle dark mode on or off, click on the toggle button in the top right corner of the web page.
-7. To view contact information, click on the 'Contact' button in the navigation bar.
+3. The app will load with the list of the top 100 cryptocurrencies(top 20 visible on the home page).
+4. To search for a specific coin, type the name or symbol of the coin in the search bar.a
+5. To toggle dark mode on or off, click on the toggle button in the top right corner of the web page.
+6. To view contact information, click on the 'Contact' button in the navigation bar.
 
 # Acknowledgments
 The CoinCap API was utilized for fetching the data. Documentation for the API can be accessed here.
