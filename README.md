@@ -11,7 +11,7 @@ Bit Wise is a web application that allows users to track the real-time prices an
 - Contact information accessible from the navigation bar.
 - The application includes a logo refresh feature that allows users to reload the page by clicking on the logo.
 
-NOTE: Some of the features such as the 'About' page, among others, are not available yet to fulfill the requirement of 'no redirects' to others pages.
+NOTE: Some of the features such as the 'About' page, among others, are not available yet, to fulfill the requirement of 'no redirects' to others pages. These links have been used for purely aesthetic purpose, but will be added later.
 
 # Technologies Used
 - HTML

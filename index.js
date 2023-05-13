@@ -82,12 +82,16 @@ getCoins().then(coins => {
 searchInput.addEventListener('input', searchCoins);
   
 
-//Refresh page from home button
+//Refresh page from logo and home button
 const h1 = document.querySelector('h1')
+const homeButton= document.querySelector('#homeButton')
 h1.addEventListener('click', reloadPage)
+homeButton.addEventListener('click', reloadPage)
 function reloadPage() {
     location.reload()
 }
+
+
 
 
 //Dark Mode toggle
@@ -118,6 +122,26 @@ function scrollToBottom() {
   }
   
   scrollToBottom();
+
+// Get the button element
+const aboutButton = document.querySelector("#aboutButton");
+const termsButton = document.querySelector("#termsOfService");
+const disclaimerButton = document.querySelector("#disclaimer");
+const privacyButton = document.querySelector("#privacyPolicy");
+
+// Add a click event listener to the About button
+aboutButton.addEventListener("click", () => {
+  alert("Feature not available");
+});
+termsButton.addEventListener("click", () => {
+  alert("Feature not available");
+});
+disclaimerButton.addEventListener("click", () => {
+  alert("Feature not available");
+});
+privacyButton.addEventListener("click", () => {
+  alert("Feature not available");
+});
 
 
 
