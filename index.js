@@ -144,6 +144,5 @@ privacyButton.addEventListener("click", () => {
 });
 
 
-
 }) 
 
