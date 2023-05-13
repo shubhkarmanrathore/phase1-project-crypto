@@ -201,11 +201,3 @@ footer {
   .red-arrow{
     color: red;
   };
-
-  .modal-overlay{
-    display:flex
-  }
-
-  .modal{
-    display: flex;
-  }
