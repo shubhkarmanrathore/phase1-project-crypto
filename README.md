@@ -1,17 +1,19 @@
 # phase1-project-crypto
 
 # Bit Wise App
-Bit Wise is a web application that allows users to track the real-time prices and information of 100 different cryptocurrencies. The app provides users with detailed information such as rank, symbol, name, market cap, volume, price, and 24-hour change for each coin. Users can also search for specific coins and view the detailed information for each coin.
+Bit Wise is a web application that allows users to track the real-time prices and information of 100 different cryptocurrencies. The app provides users with detailed information such as rank, symbol, name, market cap, volume, price, and 24-hour change for each coin. Users can also search for specific coins and view the detailed information for each coin. It features an easy to use interface that both, interactive and functional at the same time.
 
 # Features
 - Real-time tracking of 100 different cryptocurrency prices and information.
 - Detailed information for each coin, including rank, symbol, name, market cap, volume, price, and 24-hour change.
-- Search functionality for specific coins.
+- 24hr change, accompanied by a green and red arrow symbol to indicate positive and negative change, respectively.
+- Hover feature, added to each coin card, in CSS.
+- Search functionality for easy lookup of specific coins.
 - Dark mode toggle.
 - Contact information accessible from the navigation bar.
 - The application includes a refresh feature that allows users to reload the page by clicking on the logo or home button.
 
-NOTE: Some of the features such as the 'About' page, among others, are not available yet, to fulfill the requirement of 'no redirects' to others pages. These links have been used for purely aesthetic purpose, but will be added later.
+NOTE: Some of the links, such as the 'About' page, among others in the footer, are not available yet, to fulfill the requirement of 'no redirects' to others pages. These links have been used for purely aesthetic purpose, but will be added later.
 
 # Technologies Used
 - HTML
