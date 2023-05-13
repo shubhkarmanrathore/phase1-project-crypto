@@ -48,12 +48,20 @@ function displayCoins(coins) {
       arrow.classList.add('red-arrow');
     }
 
-    change.appendChild(arrow);
+    const dailyVolume = document.createElement('p');
+    dailyVolume.textContent = `24hr Volume: $${(parseFloat(volumeUsd24Hr) / 1000000000).toFixed(2)}B`;
 
+    const marketCap = document.createElement('p');
+    marketCap.textContent = `Market Cap: $${(parseFloat(marketCapUsd) / 1000000000).toFixed(2)}B`;
+
+
+    change.appendChild(arrow);
     card.appendChild(image);
     card.appendChild(heading);
     card.appendChild(price);
     card.appendChild(change);
+    card.appendChild(dailyVolume)
+    card.appendChild(marketCap);
     coinsGrid.appendChild(card);
     });
   }
@@ -123,13 +131,13 @@ function scrollToBottom() {
   
   scrollToBottom();
 
-// Get the button element
+// Get the button elements that are not working yet
 const aboutButton = document.querySelector("#aboutButton");
 const termsButton = document.querySelector("#termsOfService");
 const disclaimerButton = document.querySelector("#disclaimer");
 const privacyButton = document.querySelector("#privacyPolicy");
 
-// Add a click event listener to the About button
+// Add a click event listener to the buttons
 aboutButton.addEventListener("click", () => {
   alert("Feature not available");
 });
