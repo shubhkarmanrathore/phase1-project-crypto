@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Bit Wise</title>
-  <link rel="icon" type="images/x-icon" href='./images/bit.png' />
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1 class="logo"></h1>
-    <nav id="navBarTop">
-      <ul>
-        <li><a href="#" class="options" id="homeButton">Home</a></li>
-        <li><a href="#" class="options" id="aboutButton">About</a></li>
-        <li><a href="#" class="options" id="contactButton">Contact</a></li>
-        <div class="toggle-container">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bit Wise</title>
+    <link rel="icon" type="images/x-icon" href='./images/bit.png' />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"></h1>
+      <nav id="navBarTop">
+        <ul>
+          <li><a href="#" class="options" id="homeButton">Home</a></li>
+          <li><a href="#" class="options" id="aboutButton">About</a></li>
+          <li><a href="#" class="options" id="contactButton">Contact</a></li>
+          <div class="toggle-container">
             <input type="checkbox" id="toggle" class="toggle">
             <label for="toggle" class="toggle-label">Dark Mode</label>
           </div>
-          
-      </ul>
-    </nav>
-  </header>
-  <div id="app">
-    <div class="search-container">
-      <label for="search-input">Search Coins:</label>
-      <input type="text" id="search-input" placeholder="Enter a coin name">
-    </div>
-    <div class="coins-container">
-      <div class="coins-grid"></div>
-    </div>
-  </div>
-  <footer class="footer">
-    <div class="footer-container">
-      <nav id="navBarBottom">
-        <ul>
-          <li><a href="#" class="options" id="termsOfService">Terms of Service</a></li>
-          <li><a href="#" class="options" id="privacyPolicy">Privacy Policy</a></li>
-          <li><a href="#" class="options" id="disclaimer">Disclaimer</a></li>
         </ul>
       </nav>
-      <div id="copyright">
-        © 2023 Bit Wise. All Rights Reserved.
+    </header>
+    <div id="app">
+      <div class="search-container">
+        <label for="search-input">Search Coins:</label>
+        <input type="text" id="search-input" placeholder="Enter a coin name">
       </div>
-      <div id="contact-info">
-        <li>info@bitwise.com</li>
-        <li>987-654-3210</li>
+      <div class="coins-container">
+        <div class="coins-grid"></div>
       </div>
-      
     </div>
-  </footer>
-  <script src="index.js"></script>
-</body>
+    <footer class="footer">
+      <table id="footerTable">
+        <tr>
+          <td>
+            <div class="footer-container">
+              <nav id="navBarBottom">
+                <p>
+                  <a href="#" class="options" id="termsOfService">Terms of Service</a> | 
+                  <a href="#" class="options" id="privacyPolicy">Privacy Policy</a> | 
+                  <a href="#" class="options" id="disclaimer">Disclaimer</a>
+                </p>
+              </nav>
+            </div>
+          </td>
+          <td>
+            <div id="copyright">
+              © 2023 Bit Wise. All Rights Reserved.
+            </div>
+          </td>
+          <td>
+            <div id="contact-info">
+              <li>Contact Us</li>
+              <li>info@bitwise.com</li>
+              <li>987-654-3210</li>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
